@@ -1,0 +1,96 @@
+
+<!--html section - begin-->
+<html>
+<head>
+<style>
+     
+.regtext {font-family: Times; 
+            font-size: 1.2 em; 
+            width: 10em;
+			position: absolute; 
+            top: 100px; 
+            left: 42%;
+			text-align: center;}
+        .image{ 
+                width:auto; 
+                text-align:center; 
+                padding:20px; 
+                position: absolute; 
+                top: -55px;
+                left:-85px;
+
+            } 
+            img { 
+                max-width:160%; 
+                height:auto; 
+            }
+    .position1{
+        position:absolute;
+        top: 550px;
+        left: 35%;
+    }
+    .position2{
+        position:absolute;
+        top: 550px;
+        left: 42%;
+    }
+    .position3{
+        position:absolute;
+        top: 550px;
+        left: 49%;
+    }
+    .position4{
+        position:absolute;
+        top: 550px;
+        left: 56%;
+    }
+    .imgposition{
+        left: 575px;
+        top:75px;
+    }
+</style>
+<script>
+function north_West(){
+document.getElementById("gray-color-image").style.left='575px';
+document.getElementById("gray-color-image").style.top='75px';
+}
+function north_East(){
+document.getElementById("gray-color-image").style.left='800px';
+document.getElementById("gray-color-image").style.top='75px';
+}
+function south_East(){
+document.getElementById("gray-color-image").style.left='800px';
+document.getElementById("gray-color-image").style.top='410px';
+}
+function south_West(){
+document.getElementById("gray-color-image").style.left='575px';
+document.getElementById("gray-color-image").style.top='410px';
+}
+</script>
+</head>
+<body>
+<!--image inserted-->
+<p class = "regtext">
+    <br><br><br><br>
+    My name  is  Aviansh<br>
+    Chunduri and I am <br>
+    studying    4<sup>th</sup> year <br> 
+    at GITAM University <br>
+    at Bengaluru.I will be<br>
+     graduating with a<br>
+     Bachelor of Technology <br>
+     degree in Computer<br>
+     Science I am <br>
+    currently holding a <br>
+    9.3 overall GPA.<br>
+    <span class = "image">
+        <img style="opacity: 0.3;filter: grayscale(100%);" src = "320.jpg" alt = "Image of Me" />
+    </span>
+</p>
+<img src="320.jpg" style="width: 100;height: 100; position:relative;" id="gray-color-image" class="imgposition"/>
+<input type="button" onclick="north_West();"value="North West" class="position1"/>
+<input type="button" onclick="south_West();"value="South West" class="position2"/>
+<input type="button" onclick="south_East();" value="South East" class="position3"/>
+<input type="button" onclick="north_East();" value="North East" class="position4"/>
+</body>
+</html>
